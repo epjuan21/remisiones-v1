@@ -1,8 +1,8 @@
-import Header from '@/app/componets/Header';
-import Footer from '@/app/componets/Footer';
-import CallToAction from '@/app/componets/CallToAction';
-import Features from '@/app/componets/Features';
-import HeroSection from '@/app/componets/HeroSection';
+import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
+import CallToAction from '@/app/components/CallToAction';
+import Features from '@/app/components/Features';
+import HeroSection from '@/app/components/HeroSection';
 
 export default function Home() {
   return (
