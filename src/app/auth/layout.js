@@ -13,9 +13,22 @@ export default function AuthLayout({ children }) {
               Gestiona todas tus remisiones de manera eficiente y segura con nuestra plataforma integral.
             </p>
           </div>
-          <div className="relative w-full h-64">
-            {/* Puedes reemplazar este Image con una imagen real de tu sistema */}
-            <div className="absolute inset-0 bg-white/10 rounded-lg"></div>
+          <div className="relative w-full h-64 flex items-center justify-center rounded-lg shadow-xl overflow-hidden">
+            <div className="relative w-full h-full rounded-lg overflow-hidden">
+              <Image
+                src="/images/ImageLogin.png"
+                alt="Imagen representativa del sistema de remisiones médicas"
+                fill
+                style={{ 
+                  objectFit: 'contain',
+                  borderRadius: '16px' 
+                }}
+                priority
+                className="rounded-lg"
+              />
+              {/* Agregar un overlay suave para integrar mejor con el fondo */}
+              <div className="absolute inset-0 bg-blue-800/10 rounded-2xl"></div>
+            </div>
           </div>
         </div>
       </div>
