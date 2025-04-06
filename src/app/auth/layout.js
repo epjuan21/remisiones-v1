@@ -13,26 +13,19 @@ export default function AuthLayout({ children }) {
               Gestiona todas tus remisiones de manera eficiente y segura con nuestra plataforma integral.
             </p>
           </div>
-          <div className="relative w-full h-64 flex items-center justify-center rounded-lg shadow-xl overflow-hidden">
-            <div className="relative w-full h-full rounded-lg overflow-hidden">
-              <Image
-                src="/images/ImageLogin.png"
-                alt="Imagen representativa del sistema de remisiones médicas"
-                fill
-                style={{ 
-                  objectFit: 'contain',
-                  borderRadius: '16px' 
-                }}
-                priority
-                className="rounded-lg"
-              />
-              {/* Agregar un overlay suave para integrar mejor con el fondo */}
-              <div className="absolute inset-0 bg-blue-800/10 rounded-2xl"></div>
-            </div>
+          <div className="relative w-full rounded-md h-64 overflow-hidden"> {/* Contenedor principal con redondeo y overflow */}
+            <Image
+              src="/images/ImageLogin.jpg"
+              alt="Imagen representativa del sistema de remisiones médicas"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-contain rounded-md" // Controla cómo se ajusta la imagen dentro de su contenedor
+              priority
+            />
           </div>
         </div>
       </div>
-      
+
       {/* Contenido de autenticación */}
       <div className="flex-1 flex flex-col justify-center items-center p-6">
         <div className="w-full max-w-md">
@@ -42,12 +35,12 @@ export default function AuthLayout({ children }) {
             </Link>
             <p className="text-gray-500 mt-2">Accede a tu cuenta para continuar</p>
           </div>
-          
+
           {/* Aquí se renderiza el contenido de cada página */}
           <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
             {children}
           </div>
-          
+
           {/* Enlaces de ayuda */}
           <div className="mt-8 text-center text-sm text-gray-500">
             <p>
